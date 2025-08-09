@@ -1,74 +1,8 @@
-PS C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810> mkdir git_challenge
-
-
-    ディレクトリ: C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-d-----        2025/08/09     22:26                git_challenge
-
-
-PS C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810> git commit -m "1回目のコミット"                                                              
-On branch main
-
-Initial commit
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        git_challenge/
-
-nothing added to commit but untracked files present (use "git add" to track)
-PS C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810> cd git_challenge
-PS C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810\git_challenge> git commit -m "1回目のコミット" 
-On branch main
-
-Initial commit
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        ./
-
-nothing added to commit but untracked files present (use "git add" to track)
-PS C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810\git_challenge> cd git_challenge/
-cd : パス 'C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810\git_challenge\git_challenge\' が存在しないため検出できません。
-発生場所 行:1 文字:1
-+ cd git_challenge/
-+ ~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : ObjectNotFound: (C:\Users\user\D...\git_challenge\:String) [Set-Location], ItemNotFoundException
-    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
-
-PS C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810\git_challenge> cd git_challenge
-cd : パス 'C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810\git_challenge\git_challenge' が存在しないため検出できません。
-発生場所 行:1 文字:1
-+ cd git_challenge
-+ ~~~~~~~~~~~~~~~~
-    + CategoryInfo          : ObjectNotFound: (C:\Users\user\D...e\git_challenge:String) [Set-Location], ItemNotFoundException
-    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
-
-PS C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810\git_challenge> cd git_challenge
-cd : パス 'C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810\git_challenge\git_challenge' が存在しないため検出できません。
-発生場所 行:1 文字:1
-+ cd git_challenge
-+ ~~~~~~~~~~~~~~~~
-    + CategoryInfo          : ObjectNotFound: (C:\Users\user\D...e\git_challenge:String) [Set-Location], ItemNotFoundException
-    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
-
-PS C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810\git_challenge> mkdir git_challenge
-
-
-    ディレクトリ: C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810\git_challenge
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-d-----        2025/08/09     22:37                git_challenge
-
-
-PS C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810\git_challenge> cd git_challenge
-PS C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810\git_challenge\git_challenge> git init
-Initialized empty Git repository in C:/Users/user/Desktop/侍エンジニア書類/チュートリアル/kadai_github/kadai_250810/git_challenge/git_challenge/.git/
-PS C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810\git_challenge\git_challenge> git commit -m "1回目のコミット"                
+PS C:\Users\user> cd C:\Users\user\Desktop\git_challenge
+PS C:\Users\user\Desktop\git_challenge> git init
+Reinitialized existing Git repository in C:/Users/user/Desktop/git_challenge/.git/
+PS C:\Users\user\Desktop\git_challenge> echo "Hello, World!" > hello_world.txt                                      
+PS C:\Users\user\Desktop\git_challenge> git commit -m "hello_world.txtを追加"
 On branch main
 
 Initial commit
@@ -78,48 +12,22 @@ Untracked files:
         hello_world.txt
 
 nothing added to commit but untracked files present (use "git add" to track)
-PS C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810\git_challenge\git_challenge> git add hello_world.txt
-PS C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810\git_challenge\git_challenge> git commit -m "1回目のコミット"
-[main (root-commit) 6489546] 1回目のコミット
- 1 file changed, 1 insertion(+)
+PS C:\Users\user\Desktop\git_challenge> git log --oneline
+fatal: your current branch 'main' does not have any commits yet
+PS C:\Users\user\Desktop\git_challenge> git add hello_world.txt
+PS C:\Users\user\Desktop\git_challenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) 8a23424] hello_world.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 hello_world.txt
-PS C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810\git_challenge\git_challenge> git add hello_world.txt
-PS C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810\git_challenge\git_challenge> git commit -m "2回目のコミット"
-[main c8bc897] 2回目のコミット
- 1 file changed, 2 insertions(+), 1 deletion(-)
-PS C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810\git_challenge\git_challenge> git status
+PS C:\Users\user\Desktop\git_challenge> git add hello_world.txt
+PS C:\Users\user\Desktop\git_challenge> git commit -m "日本語訳を追記"
+[main 531d4bb] 日本語訳を追記
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\user\Desktop\git_challenge> git status 
 On branch main
 nothing to commit, working tree clean
-PS C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810\git_challenge\git_challenge> git log --oneline
-c8bc897 (HEAD -> main) 2回目のコミット
-6489546 1回目のコミット
-PS C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810\git_challenge\git_challenge> git commit -m "hello_world.txtを追加"
-On branch main
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   hello_world.txt
-
-no changes added to commit (use "git add" and/or "git commit -a")
-PS C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810\git_challenge\git_challenge> git add hello_world.txt
-PS C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810\git_challenge\git_challenge> git commit -m "hello_world.txtを追加"                      
-[main 34d2d62] hello_world.txtを追加
- 1 file changed, 1 insertion(+), 2 deletions(-)
-PS C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810\git_challenge\git_challenge> git commit -m "日本語訳を追記"
-On branch main
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   hello_world.txt
-
-no changes added to commit (use "git add" and/or "git commit -a")
-PS C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810\git_challenge\git_challenge> git add hello_world.txt
-PS C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810\git_challenge\git_challenge> git commit -m "日本語訳を追記"
-[main a9d9aa5] 日本語訳を追記
- 1 file changed, 2 insertions(+), 1 deletion(-)
-PS C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810\git_challenge\git_challenge> git log --oneline
-a9d9aa5 (HEAD -> main) 日本語訳を追記
-34d2d62 hello_world.txtを追加
-c8bc897 2回目のコミット
-6489546 1回目のコミット
-PS C:\Users\user\Desktop\侍エンジニア書類\チュートリアル\kadai_github\kadai_250810\git_challenge\git_challenge> 
+PS C:\Users\user\Desktop\git_challenge> git log --online
+fatal: unrecognized argument: --online
+PS C:\Users\user\Desktop\git_challenge> git log --oneline
+531d4bb (HEAD -> main) 日本語訳を追記
+8a23424 hello_world.txtを追加
